@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --button-color: #4d5b9e;
+  --button-text-color: #f5f7fb;
+  --text-color: #293264;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+  background-color: #f5f7fb;
+}
+
+.start-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 31.25px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 10px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 10px;
+}
+
+.start-quiz {
+  width: 193px;
+  height: 52px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border-radius: 15px;
+  border-style: none;
+  font-size: 16px;
+  line-height: 19.36px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.quiz-container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.7px;
+  color: var(--text-color);
+  margin: 10px;
+}
+
+.btn {
+  background: #d6dbf5;
+  font-size: 10.24px;
+  font-weight: 500;
+  line-height: 12.39px;
+  text-align: center;
+  border-style: none;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 7.94px;
+}
+
+.btn-correct {
+  background: #94d7a2;
+  font-size: 10.24px;
+  font-weight: 500;
+  line-height: 12.39px;
+  text-align: center;
+  border-style: none;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 7.94px;
+}
+
+.btn-incorrect {
+  background: #f8bcbc;
+  font-size: 10.24px;
+  font-weight: 500;
+  line-height: 12.39px;
+  text-align: center;
+  border-style: none;
+  padding: 5px 20px;
+  border-radius: 7.94px;
+  margin: 5px;
+}
+
+.check-btn {
+  width: 120px;
+  height: 35px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border-radius: 15px;
+  border-style: none;
+  font-size: 10.24px;
+  line-height: 12.39px;
+  font-weight: 500;
+  margin: 10px;
+  align-self: center;
+}
+
+hr {
+  margin-top: 10px;
+  background-color: #dbdef0;
+  width: 400px;
+  height: 1px;
+  border: none;
 }
