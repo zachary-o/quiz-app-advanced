@@ -18,4 +18,4 @@ export const fetchQuestion = async () => {
   return finalQuestions;
   
 };
-fetchQuestion();
+
